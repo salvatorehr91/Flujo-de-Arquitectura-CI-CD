@@ -99,16 +99,11 @@ stage('Build Docker Image') {
 ---
 
 📊 Esquema Visual del Flujo
-Código
-```
-[GitHub] --> [Webhook] --> [Jenkins CI Pipeline]
-   |                          |
-   |                          --> Build + Test + Docker Image --> [Registry]
-   |
-   --> [Harness CD Pipeline] --> Deploy to OpenShift (Test -> Prod)
-                                      |
-                                      --> Monitoring + Rollback
-```
+
+<p align="center">
+  <img src="images/Flujo-CI-CD con-Jenkins- OpenShift.png" width="800">
+</p>
+
 ---
 
 #### ✅ Beneficios del Flujo
